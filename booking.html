@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج الحجز</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="Login.html"> تسجيل دخول</a></li>
+                <li><a href="about.html">معلومات عنا</a></li>
+                <li><a href="packages.html">الباقات</a></li>
+                <li><a href="facilities.html">الحزم المخصصة المعروضة</a></li>
+                <li><a href="gallery.html">المعرض</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+                <li><a href="Mango AI Work_20250306-095949.mp4"> فيديو للمنتجع </a></li>
+                <li><a href="booking.html" class="btn">احجز الآن</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>نموذج الحجز</h2>
+        <form action="submit_booking.php" method="POST">
+
+            <div class="form-group">
+                <label for="full-name">الاسم الكامل:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="arrival-date">تاريخ الوصول:</label>
+                <input type="date" id="arrival-date" name="arrival-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">عدد النزلاء:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+            </div>
+
+            <button type="submit">إرسال الحجز</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
